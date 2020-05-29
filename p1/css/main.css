@@ -1,0 +1,465 @@
+body {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+.b-image {
+	height: calc(100vh - 50px);
+	
+	padding: 23px;
+	margin-top: 46px;
+}
+.b-image .back {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-image: url("../img/home.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.b-image h1, .b-image a {
+	text-decoration: none;
+}
+.b-image .back .content-container {
+	position: relative;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.b-image .back .content-container h1 {
+	font-size: 60px;
+	font-weight: 500;
+	color: #ffffff;
+	margin: 0;
+	margin-bottom: 40px;
+}
+.b-image .back .content-container a {
+	text-decoration: none;
+}
+.starter-kits {
+	padding: 0 23px 50px;
+ 	height: 500px;
+	max-width: 100vw;
+	margin-top: 40px;
+}
+.starter-kits .st-image {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	background-image: url("../img/starter.jpg");
+	background-position: 47%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.starter-kits .content h2 {
+	font-size: 2em;
+	padding: 40px 10px 20px 56px;
+}
+.starter-kits .content a {
+	display: block;
+	margin-left: 56px;
+	padding: 0;
+	text-align: center;
+	background-color: #111;
+	width: 180px;
+	color: #fff;
+}
+.starter-kits .content a:hover {
+	background-color: #fff;
+	color: #111;
+}
+.btn {
+	color: #fff;
+	background: #000;
+	padding: 10px 15px;
+	width: 185px;
+	font-size: 16px;
+	font-weight: 500;
+	height: 45px;
+	border-radius: 4px;
+	line-height: 45px;
+	margin: 0 auto;
+	transition: .4s;
+}
+.b-image .back .content-container .btn {
+	color: #fff;
+	background-color: #111;
+}
+.b-image .back .content-container .btn:hover {
+	color: #111;
+	background-color: #fff;
+	transition: .4s;
+}
+.b-image a:hover {
+	transition: .6s	;
+	color: #111;
+	background-color: #fff;
+}
+.losung {
+	background-color: #f4f4f4;
+	padding: 100px;
+	text-align: center;
+}
+.losung span {
+	font-size: 16px;
+	opacity: .5;
+}
+.losung h2 { 
+	font-size: 30px;
+	font-weight: 600;
+}
+.losung a {
+	padding: 10px 55px;
+	color: #111;
+	font-weight: 600;
+	background-color: #fff;
+	border: 2px solid #111;
+	text-decoration: none;
+}
+.losung a:hover {
+	color: #fff;
+	background-color: #111;
+}
+.notebooks {
+	max-width: 100%;
+	min-height: 450px;
+	margin: 23px 23px 0 23px;
+	transition: 1s;
+}
+.notebooks img {
+	width: calc(55% - 2px);
+	float: left;
+}
+.notebooks .content {
+	padding-left: 100px;
+	padding-top: 10%;
+	float: left;
+}
+.content h2 {
+	font-size: 50px;
+	padding-bottom: 15px;
+	margin: 0;
+	font-weight: 500;
+}
+.content p {
+	font-weight: 600;
+	padding-bottom: 15px;
+}
+.content a {
+	background-color: #fff;
+	color: #111;
+	text-decoration: none; 
+	border: 2px solid #111;
+}
+.content a:hover {
+	background-color: #111;
+	color: #fff;
+}
+.pens {
+	max-width: 100%;
+	min-height: 450px;
+	margin: 5% 23px;
+	transition: 1s;
+}
+.pens img {
+	width: calc(55% - 2px);
+	float: right;
+}
+.pens .content {
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 10%;
+	float: right;
+}
+.pens h2 {
+	font-size: 50px;
+	padding-bottom: 15px;
+	margin: 0;
+	font-weight: 500;
+}
+.pens p {
+	font-weight: 600;
+	padding-bottom: 15px;
+}
+.pens a {
+	background-color: #fff;
+	color: #111;
+	text-decoration: none; 
+	border: 2px solid #111;
+}
+.pens a:hover {
+	background-color: #111;
+	color: #fff;
+}
+.bot-nav {
+	display: flex;
+	justify-content: center;
+	line-height: 60px;
+}
+.bot-nav a {
+	color: #111;
+	text-decoration: none;
+	padding: 0 3%;
+	font-size: 18px;
+}
+.bot-nav a:hover {
+	opacity: .7;
+}
+
+.copy {
+	display: block;
+	width: 100%
+
+}
+.mob-los {
+	display: none;
+}
+footer .f-mobile {
+	display: none;
+}
+.module-menu {
+  	display: none;
+}
+/*
+	MEDIA
+*/
+@media only screen and (min-width: 320px) and (max-width: 1100px) {
+	.right-nav .item-cont:first-child {
+		display: none;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 850px) {
+	nav .right-nav,
+	nav .left-nav {
+		display: none;
+	}
+	.mobile-nav {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.mobile-nav .left,
+	.mobile-nav .right {
+		display: inline-block;
+		flex-grow: 1;
+		width: 30%;
+
+	}
+	.mobile-nav .right {
+		text-align: right;
+		padding-right: 15px;+
+	}
+	.mobile-nav .middle {
+		display: inline-block;
+		font-size: 22px;
+		width: 30%;
+		text-align: left;
+	}
+	.mobile-nav .left a,
+	.mobile-nav .right a,
+	.mobile-nav .middle a {
+		text-align: center;
+		font-size: 18px;
+	}
+	.b-image .back .content-container h1 {
+		font-size: 34px;
+		font-weight: 700;
+	}
+	.notebooks img, 
+	.pens img {
+		width: 100%;
+	}
+	.losung span {
+		font-size: 13px;
+		font-weight: 600;
+	}
+	.losung p {
+		font-size: 15px;
+		font-weight: 600;
+	}
+	.notebooks img, 
+	.pens img {
+		margin: 0 0 15px 0;
+		border-radius: 10px;
+	} 
+	.notebooks .content, 
+	.pens .content {
+		display: block;
+		padding: 0;
+		max-width: 100%;
+		text-align: center;
+		float: none;
+		max-height: 100%;
+	}
+	
+	.content h2 {
+		font-size: 28px;
+		font-weight: 500;
+	}
+	.losung .btn {
+		display: block;
+		text-align: center;
+		width: 50%;
+	}
+	.losung .non-mobile {
+		display: none;
+	}
+	.losung .mob-los {
+		display: block;
+		font-size: 22px;
+	}
+	.losung .mob-los p {
+		margin: 0 auto 10px auto;
+		display: block;
+		width: 189px;
+		font-size: 22px;
+		font-weight: 700;
+	}
+	.losung .btn {
+		display: block;
+		margin: 0 auto;
+		width: 185px;
+		border: 2px solid #000000;
+		height: 45px;
+		line-height: 41px;
+		text-align: center;
+		padding: 0;
+	}
+	.bot-nav a {
+		font-size: 16px;
+		font-weight: 800;
+	}
+	.starter-kits {
+		height: 280px;
+	}
+	footer {
+		border-bottom: 0;
+	}
+	footer .container {
+		display: none;
+	}
+	footer .f-mobile {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		padding: 15px 10px;
+		color: #8c4d6d;
+	}
+	footer .f-mobile p {
+		font-size: 14px;
+		text-align: center;
+		line-height: 30px;
+		margin-top: 0;
+	}
+	footer .f-mobile a {
+		color: #8c4d6d;
+	}
+	footer .f-mobile .social {
+		border-bottom: 1px solid #ccc;
+		text-align: center;
+		padding: 0 0 40px 0;
+		margin-top: 0;
+		width: 80%;
+	}
+	footer .f-mobile .social a {
+		font-size: 26px;
+		padding-right: 25px;
+	}
+	footer .f-mobile .mob-container {
+		display: flex;
+		flex-flow: row;
+		width: 100%;
+		justify-content: center;
+		border-bottom: 1px solid #ccc;
+	}
+	footer .f-mobile .mob-container .column {
+		display: flex;
+		flex-flow: column;
+		padding: 35px 10px;
+		width: 30%;
+	}
+	footer .f-mobile .mob-container .column a {
+		text-align: center;
+		text-decoration: none;
+		font-size: 14px;
+		padding: 0 0 15px 0;
+	}
+	footer .f-mobile .mob-container .column a:first-child {
+		font-weight: 800;
+	}
+	footer .f-mobile .copy-mob {
+		padding: 20px 10px 0;
+		font-size: 10px;
+		opacity: .7;
+	}
+	footer .f-mobile .copy-mob #terms {
+		padding-left: 15px;
+		text-decoration: none;
+	}
+	.module-menu {
+		position: fixed;
+		top: 50px;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		overflow-y: scroll; 
+  		background-color: #845164;
+  		z-index: 100;
+	}
+	.module-menu div {
+	    height: 40px;
+	    width: 100%;
+  		border-bottom: 2px solid #a27586;
+  		background: #845164;
+	}
+	.module-menu  a {
+  		display: block;
+  		height: 100%;
+  		width: 100%;
+  		text-decoration: none;
+  		padding: 0 40px;
+	}
+	.module-menu div a  p {
+ 	 	font-size: 17px;
+  		color: white;
+  		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+	}
+	.module-menu-active {
+  		display: block;
+	}
+}
+@media only screen and (min-width: 1670px) {
+	.notebooks, 
+	.pens {
+		min-height: 600px;
+	}
+	.losung span, .losung p {
+		font-size: 24px;
+	}
+	.b-image a,
+	.losung a {
+		display: block;
+		width: 185px;
+		height: 40px;
+		font-size: 20px;
+	}
+	.notebooks .content p,
+	.pens .content p {
+		font-size: 20px;
+	}
+	.notebooks .content a,
+	.pens .content a {
+		padding: 15px 40px;
+		font-size: 18px;
+
+	}
+}
