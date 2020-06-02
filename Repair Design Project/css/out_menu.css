@@ -93,9 +93,6 @@ nav a {
   font-size: 14px;
   text-decoration: none;
 }
-nav a:hover {
-  color: #E3B873;
-}
 
 main .description {
   background: url(../img/greet.jpg);
@@ -149,15 +146,9 @@ main .description .scrolling-down {
   margin: auto;
   cursor: pointer;
   background-color: #131313;
-  box-shadow: 0 0 2px 1px #E3B873;
 }
-main .description .scrolling-down i {
-  position: relative;
-  font-size: 30px;
-  left: 16px;
-  top: 10px;
-  text-align: center;
-  color: #E3B873;
+main .description .scrolling-down img {
+  width: 100%;
 }
 main .description .scrolling-down:hover {
   cursor: pointer;
