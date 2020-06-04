@@ -1,0 +1,121 @@
+
+body {
+	font: 400 1rem/1.5625rem "Open Sans", sans-serif;
+	margin: 0;
+}
+.hexagon {
+	background: url(../img/hexagon.svg) center center no-repeat;
+	position: absolute;
+	width: 1.625rem;
+	height: 1.625rem;
+}
+.header-wrap {
+	// Запомни! ЗАТЕМНЕНИЕ ФОНА ЧЕРЕЗ ЛИНЕЙНЫЙ ГРАДИЕНТ!!!
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
+	 url(../img/header-background.jpg) center top no-repeat;
+	width: 100%;
+	height: 100%;
+
+	.header-content {
+		padding-top: 21.75rem;
+		padding-bottom: 17.5rem;
+		text-align: center;
+		.container {
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+			.text-container {
+
+				h1 {
+					color: #fff;
+					font-size: 60px;
+					font-weight: 600;
+					text-transform: uppercase;
+				}
+				p {
+					color: $l-grey;
+					font-size: 18px;
+					margin: 0 auto 30px;
+					width: 55%;
+				}
+				.page__scroll {
+					background-color: $l-green;
+					border: 2px solid $l-green;
+					border-radius: 5px;
+					color: #fff;
+					padding: 15px 30px;
+					margin-top: 15px;
+					text-transform: uppercase;
+					transition: .3s;
+				}
+				.page__scroll:hover {
+					color: $l-green;
+					text-decoration: none;
+					background-color: transparent;
+					transition: .3s;
+				}
+			}
+		}
+	}
+}
+.header {
+	position: fixed;
+	width: 100%;
+	.nav-container {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1% 5%;
+		
+		.nav__logo {
+			flex-grow: 1;
+			width: 10%;
+			a {
+				img {
+					width: 150px;
+				}
+			}
+		}
+		.nav-mobile {
+			display: none;
+		}
+		.nav-links {
+			flex-grow: 1;
+			text-align: right;
+		}
+		.nav-links,
+		.socail-links {
+			align-items: center;
+			.active {
+				color: $l-green;
+			}
+			a {
+				color: #fff;
+				font-size: calc(14px + 0 * (100vw / 1920));
+				font-weight: 700;
+				padding: 0 1%;
+				text-transform: uppercase;
+				text-decoration: none;
+				transition: .2s;
+			}
+			a:hover {
+				color: $l-green;
+				transition: .2s;
+			}
+		}
+		
+	}
+
+}
+
+[data-aos="color"] {
+  height: 80px;
+}
+[data-aos="color"].aos-animate {
+  background-color: $f-color;
+  height: 66px;
+  z-index: 100;
+}

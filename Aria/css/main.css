@@ -1,0 +1,199 @@
+body {
+  font: 400 1rem/1.5625rem "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.hexagon {
+  background: url(../img/hexagon.svg) center center no-repeat;
+  position: absolute;
+  width: 1.625rem;
+  height: 1.625rem;
+}
+
+.header-wrap {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/header-background.jpg) center top no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.header-wrap .header-content {
+  padding-top: 21.75rem;
+  padding-bottom: 17.5rem;
+  text-align: center;
+}
+.header-wrap .header-content .container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header-wrap .header-content .container .text-container h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.header-wrap .header-content .container .text-container p {
+  color: #dfe5ec;
+  font-size: 18px;
+  margin: 0 auto 30px;
+  width: 55%;
+}
+.header-wrap .header-content .container .text-container .page__scroll {
+  background-color: #14bf98;
+  border: 2px solid #14bf98;
+  border-radius: 5px;
+  color: #fff;
+  padding: 15px 30px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.header-wrap .header-content .container .text-container .page__scroll:hover {
+  color: #14bf98;
+  text-decoration: none;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+}
+.header .nav-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5%;
+}
+.header .nav-container .nav__logo {
+  flex-grow: 1;
+  width: 10%;
+}
+.header .nav-container .nav__logo a img {
+  width: 150px;
+}
+.header .nav-container .nav-mobile {
+  display: none;
+}
+.header .nav-container .nav-links {
+  flex-grow: 1;
+  text-align: right;
+}
+.header .nav-container .nav-links,
+.header .nav-container .socail-links {
+  align-items: center;
+}
+.header .nav-container .nav-links .active,
+.header .nav-container .socail-links .active {
+  color: #14bf98;
+}
+.header .nav-container .nav-links a,
+.header .nav-container .socail-links a {
+  color: #fff;
+  font-size: calc(14px + 0 * (100vw / 1920));
+  font-weight: 700;
+  padding: 0 1%;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.header .nav-container .nav-links a:hover,
+.header .nav-container .socail-links a:hover {
+  color: #14bf98;
+  transition: 0.2s;
+}
+
+[data-aos=color] {
+  height: 80px;
+}
+
+[data-aos=color].aos-animate {
+  background-color: #113448;
+  height: 66px;
+  z-index: 100;
+}
+
+@media only screen and (max-width: 1000px) {
+  header .social-links {
+    display: none;
+  }
+}
+@media only screen and (max-width: 750px) {
+  header .nav-links {
+    display: none;
+  }
+  header .burger {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: block;
+  }
+  header .burger span,
+header .burger span:before,
+header .burger span:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+  }
+  header .burger span:before,
+header .burger span:after {
+    content: "";
+    display: block;
+    transition: 0.2s;
+  }
+  header .burger span:before {
+    transform: translateY(-10px);
+  }
+  header .burger span:after {
+    transform: translateY(8px);
+  }
+}
+h2 {
+  color: #484a46;
+  font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
+}
+
+.intro {
+  padding-top: 6.5rem;
+  padding-bottom: 3rem;
+}
+.intro .text-container {
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+}
+.intro .text-container h2,
+.intro .text-container .testimonial__author {
+  color: #484a46;
+  font-weight: 600;
+}
+.intro .text-container p {
+  color: #787976;
+}
+.intro .text-container .testimonial__text {
+  font-style: italic;
+}
+.intro .image-container {
+  overflow: hidden;
+  border-radius: 0.25rem;
+}
+.intro .image-container .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.intro .image-container img {
+  margin: 0;
+  border-radius: 0.25rem;
+  transition: all 0.3s;
+}
+.intro .image-container img:hover {
+  transform: scale(1.15);
+}
+
+/*# sourceMappingURL=main.css.map */
