@@ -34,3 +34,9 @@ $(document).ready(function() {
     return false;
   })
 })
+
+$('.burger').on('click', function(e) {
+  e.preventDefault();
+  $(this).toggleClass('burger-active');
+  $('.mobile-menu').slideToggle();
+});

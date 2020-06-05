@@ -10,6 +10,7 @@
 		.nav-links {
 			display: none;
 		}
+		// BURGER BUTTON
 		.burger {
 			position: relative;
 			width: 50px;
@@ -38,9 +39,71 @@
 			span:after {
 				transform: translateY(8px);
 			}
+
+		}// END OF BURGER'S BUTTON
+		.burger-active span {
+			height: 0
+		}
+		.burger-active span:before {
+			transform: rotate(-45deg);
+		}
+		.burger-active span:after {
+			transform: rotate(45deg);
+		}
+		.mobile-menu {
+			background-color: $f-color;
+			width: 100%;
+			min-height: 20%;
+
+			ul {
+				padding: 4% 10%;
+				li {
+					padding: 2% 0;
+					list-style: none;
+					a {
+						color: #fff;
+						text-decoration: none;
+					}
+					.active {
+						color: $l-green;
+					}
+				}
+			}
 		}
 	}
-}
-@media only screen and (min-width : 320px) and (max-width : 640px) {
 	
+
+}
+@media only screen and (min-width : 320px) and (max-width : 720px) {
+	.header-wrap {
+		.header-content {
+			padding-top: 10.75rem;
+			padding-bottom: 6.5rem;
+			.container {
+				.row {
+					.col-lg-12 {
+						.text-container {
+							p {
+								width: 93%;
+							}
+						
+						}
+					}
+				}
+			
+			}
+		}
+	}
+
+	.intro {
+		.container {
+			.row {
+				.col-lg-5 {
+					.text-container {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
 }
