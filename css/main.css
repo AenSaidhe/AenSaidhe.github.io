@@ -1,0 +1,129 @@
+.active {
+  color: #070707;
+  font-weight: 600;
+}
+
+header {
+  background-color: #fff;
+  position: fixed;
+  width: 80%;
+  padding: 1% 10%;
+  z-index: 100;
+}
+header .nav-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+header .nav-links a {
+  color: #828282;
+  font-size: calc(18px - 0 * (100vw / 1445));
+  font-weight: 600;
+  transition: 0.2s;
+}
+header .nav-links a:hover {
+  color: #070707;
+  transition: 0.2s;
+}
+header .nav-links .active {
+  color: #070707;
+}
+
+header:after {
+  content: "";
+  border-bottom: 1px solid #828282;
+  display: block;
+  width: 100%;
+  min-height: 20px;
+}
+
+body {
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: calc(34px - 0 * (100vw / 1444));
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #070707;
+}
+
+.container {
+  padding: 5% 10%;
+}
+.container .row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 2rem 0;
+}
+.container .row h2 {
+  margin: 0;
+  font-size: 47px;
+  line-height: 58px;
+}
+.container .row p {
+  font-size: 18px;
+  line-height: 22px;
+}
+.container .row .vertical__links {
+  transform: rotate(-90deg);
+}
+.container .row .vertical__links a {
+  color: #828282;
+  font-size: 16px;
+  line-height: 20px;
+}
+.container .row .vertical__links .active {
+  color: #070707;
+}
+.container .row img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.text-content {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+.text-content h3 {
+  line-height: 50px;
+}
+.text-content p {
+  padding-bottom: 5%;
+}
+
+#about {
+  background-color: #F6F6F6;
+}
+
+.row-column {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.row-column .col-4 {
+  flex-grow: 1;
+  text-align: center;
+  margin: 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */
