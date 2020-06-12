@@ -1,4 +1,4 @@
-@import "menu", "footer";
+@import "menu";
 
 body {
 	font-family: roboto, sans-serif;
@@ -82,4 +82,67 @@ a:hover {
 		margin: 2rem;
 	}
 	
+}
+#portfolio {
+	background-color: $lgrey;
+	.container {
+		.row-column {
+			.projects {
+				padding-bottom: 3rem;
+				img {
+					margin: 2rem 0;
+					width: 100%;
+					box-shadow: 1px 1px 4px $black;
+				}
+				a {
+					display: block;
+					color: $black;
+					font-size: 18px;
+					line-height: 22px;
+					text-align: center;
+				}
+			}
+		}
+	}
+	
+}
+footer {
+	.text__btn {
+		background-color: $black;
+		padding: 15px 30px;
+		border-radius: 30px;
+		color: #fff;
+		transition: .3s;
+		border: 1px solid $black;
+	}
+	.text__btn:hover{
+		background-color: #fff;
+		color: $black;
+		transition: .3s;
+	}
+	.container {
+		padding: 5% 10% 0;
+	}
+	.container .row:last-child {
+		display: block;
+	}
+	.row-links {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		width: 100%;
+	
+		a {
+			margin: 3% 3%;
+		}
+	}
+	.text-content {
+		span {
+			color: $grey;
+		}
+	}
+}
+
+.row-mobile {
+	display: none;
 }

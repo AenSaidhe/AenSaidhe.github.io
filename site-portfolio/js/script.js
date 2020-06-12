@@ -1,5 +1,3 @@
-AOS.init();
-
 // You can also pass an optional settings object
 // below listed default settings
 AOS.init({
@@ -32,12 +30,16 @@ $(document).ready(function() {
     let destination = $(elementClick).offset().top;
     $('html, body').animate({ scrollTop: destination }, 1000);
     return false;
-    $(this).toggleClass('active');
   })
 })
 
-$('.burger').on('click', function(e) {
+$('.mobile__burger').on('click', function(e) {
   e.preventDefault();
-  $(this).toggleClass('burger-active');
+  $(this).toggleClass('burger__active');
   $('.mobile-menu').slideToggle();
 });
+
+$('.mobile-menu li > a').click(function(e) {
+  e.preventDefault();
+  $('.mobile-menu').slideToggle();
+})

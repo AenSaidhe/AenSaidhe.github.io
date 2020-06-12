@@ -17,17 +17,33 @@
 			<a href="#portfolio">Portfolio</a>
 			<a href="#contacts">Contacts</a>
 		</div>
+		<a href="#" class="mobile__burger">
+			<span></span>
+		</a>
+		
 	</header>
+	<div class="mobile-menu">
+		<ul>
+			<li><a href="#home" class="active">Home</a></li>
+			<li><a href="#about">About me</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contacts">Contacts</a></li>
+		</ul>
+	</div>
 	<main>
 		<div class="container" id="home">
 			<div class="row">
-				<h2>Denis <br> Shkarinov</h2>
+				<h2>Denis <br> Novik</h2>
 				<p>UX | UI designer <br> 24 years old, Minsk</p>
 				<div class="vertical__links"><a href="#" id="ru-lang">RU</a> | <a href="" class="active" id="eng-lang">ENG</a></div>
 			</div>
-		<div class="row">
-			<img src="img/man.jpg" alt="Author">
-		</div>
+			<div class="row">
+				<img src="img/man.jpg" alt="Author">
+			</div>
+			<div class="row-mobile">
+				<img src="img/man2.jpg" alt="Author">
+			</div>
 		</div>
 	
 		<div id="about">
@@ -74,8 +90,66 @@
 					
 			</div>
 		</div>
+		<div id="portfolio">
+			<div class="container">
+				<div class="row-column">
+					<div class="text-content">
+						<h3>Portfolio</h3>
+					</div>
+					<div class="projects">
+						<img src="img/wm_sale.jpg" alt="">
+						<a href="#">Online fashion store - Homepage</a>
+					</div>
+					<div class="projects">
+						<img src="img/reebok_web.jpg" alt="">
+						<a href="#">Reebok Store - Concept</a>
+					</div>
+					<div class="projects">
+						<img src="img/braun.jpg" alt="">
+						<a href="#">Braun Landing Page - Concept</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 	
+	<footer id="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="text-content">
+					<h3>Contacts</h3>
+					<p>
+						Want to know more or just chat?
+						You are welcome!
+					</p>
+					<a href="#" class="text__btn">Send message</a>
+				</div>
+				 
+			</div>
+			<div class="row">
+				<div class="row-links">
+					<a href="">
+						<img src="img/icons/linked.jpg" alt="linked in">
+					</a>
+					<a href="#">
+						<img src="img/icons/insta.jpg" alt="instagram">
+					</a>
+					<a href="#">
+						<img src="img/icons/behance.jpg" alt="behance">
+					</a>
+					<a href="#">
+						<img src="img/icons/dribble.jpg" alt="dribble">
+					</a>
+				</div>
+				<div class="text-content">
+					<span>
+						Like me on <br> LinkedIn, Instagram, Behance, Dribble
+					</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/script.js"></script>
