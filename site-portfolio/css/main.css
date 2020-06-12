@@ -257,7 +257,9 @@ a:hover {
   line-height: 22px;
   text-align: center;
 }
-
+#portfolio .container .row-column .projects a:hover {
+  text-decoration: underline; 
+}
 footer .text__btn {
   background-color: #070707;
   padding: 15px 30px;
